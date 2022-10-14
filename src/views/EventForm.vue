@@ -71,7 +71,7 @@ export default {
           EventService.saveEvent(this.event).then((response) => {
             console.log(response)
             this.$router.push({
-              name: 'EventDetails',
+              name: 'EventDetail',
               params: { id: response.data.id }
             })
             this.GStore.flashMessage =
